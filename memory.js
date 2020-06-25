@@ -1,7 +1,25 @@
 var cards = ["01.png", "05.png", "06.png", "02.png", "04.png", "03.png",
 "06.png", "04.png", "01.png", "05.png", "02.png", "03.png"];  
 
-
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  }
+  
 
 
 var c0 = document.getElementById('c0');
