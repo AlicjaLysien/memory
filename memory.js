@@ -1,5 +1,5 @@
-var cards = ["01.png", "05.png", "06.png", "02.png", "04.png", "03.png",
-"06.png", "04.png", "01.png", "05.png", "02.png", "03.png"];  
+var cards = ["01.png", "01.png", "02.png", "02.png", "03.png", "03.png",
+"04.png", "04.png", "05.png", "05.png", "06.png", "06.png"];  
 
 function shuffle(array) {
     for (var i = array.length - 1; i > 0; i--) {
@@ -25,6 +25,9 @@ var c8 = document.getElementById('c8');
 var c9 = document.getElementById('c9');
 var c10 = document.getElementById('c10');
 var c11 = document.getElementById('c11');
+
+
+
 
 c0.addEventListener("click", function() { revealCard(0); });
 c1.addEventListener("click", function() { revealCard(1); });
@@ -78,12 +81,12 @@ function revealCard(nr)
        
            if(cards[visible_nr] == cards[nr])
            {
-               // para
+               // pair
        setTimeout(function() {hide2Cards(nr, visible_nr)}, 750);
                
            }
            else{
-// nie para
+// not a pair
 
 setTimeout(function() {restore2Cards(nr, visible_nr)}, 1000);
 
