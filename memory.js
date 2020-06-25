@@ -2,21 +2,13 @@ var cards = ["01.png", "05.png", "06.png", "02.png", "04.png", "03.png",
 "06.png", "04.png", "01.png", "05.png", "02.png", "03.png"];  
 
 function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-  
-    while (0 !== currentIndex) {
-  
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
-  
-    return array;
-  }
-  
+}
 
 
 var c0 = document.getElementById('c0');
