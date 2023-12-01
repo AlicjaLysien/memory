@@ -1,20 +1,18 @@
 body
 {
 	margin: 0;
-	background-color: #60bb47;
+	background-color: #586d3e;
 	color: #0d0600;
     font-family: 'Lobster', sans-serif;
     font-size: 28px;
 }
-
-
 
 h1
 {
 	font-size: 56px;
 	font-weight: 400;
 	text-align: center;
-	letter-spacing: 5px;
+	letter-spacing: 4px;
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
@@ -23,7 +21,7 @@ p
 {
 	text-align: center;
 	margin-top: 5px;
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 	letter-spacing: 2px;
 }
 
@@ -37,35 +35,32 @@ p
 
 .card
 {
-	width: 125px;
-	height: 125px;
+	width: 124px;
+	height: 124px;
 	display: inline-block;
-	margin: 3px;
+	margin: 4px;
 	background-image: url("img/00.png");
 	border: 4px solid #0d0600;
 	border-radius: 4px;
 	cursor: pointer;
-
 	filter: brightness(70%);
-
 	transition: all .3s ease-in-out;
 }
 
 .card:hover
 {
-	border: 4px solid #652e00;
-
+	border: 4px solid #311c0a;
 	filter: brightness(100%);
 }
 
 .cardA
 {
-	width: 125px;
-	height: 125px;
+	width: 124px;
+	height: 124px;
 	display: inline-block;
-	margin: 3px;
+	margin: 4px;
 	background-image: url("img/00.png");
-	border: 4px solid #652e00;
+	border: 4px solid #311c0a;
 	border-radius: 4px;
 	cursor: default;
 
@@ -77,5 +72,5 @@ p
 .score
 {
 	margin-top: 5px;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }

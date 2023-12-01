@@ -59,20 +59,16 @@ function revealCard(nr)
         }
         else // second card
         {
-       
            if(cards[visible_nr] == cards[nr])
            {
                // pair
-       setTimeout(function() {hide2Cards(nr, visible_nr)}, 750);
+            setTimeout(function() {hide2Cards(nr, visible_nr)}, 750);
                
            }
            else{
-// not a pair
-
-setTimeout(function() {restore2Cards(nr, visible_nr)}, 1000);
-
+                // not a pair
+            setTimeout(function() {restore2Cards(nr, visible_nr)}, 1000);
            }
-       
             turnCounter++;
             $('.score').html('Turn counter: ' + turnCounter);
             oneVisible = false;
@@ -101,10 +97,8 @@ function restore2Cards(nr1, nr2)
     $('#c' + nr1).css('background-image', 'url(img/00.png)');
         $('#c' + nr1).addClass('card');
         $('#c' + nr1).removeClass('cardA');
-
         $('#c' + nr2).css('background-image', 'url(img/00.png)');
         $('#c' + nr2).addClass('card');
         $('#c' + nr2).removeClass('cardA');
-
         lock = false;
 }
